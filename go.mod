@@ -1,3 +1,3 @@
-module algo
+module github.com/mindreligion/algo_coursera
 
-go 1.13
+go 1.14
