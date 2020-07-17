@@ -6,10 +6,15 @@ import (
 )
 
 func main() {
-	go NewMonitor(50)
 	g := make(graph, 0)
-	readGraph("./scc_test.txt", &g)
+	readGraph("./scc_test2.txt", &g)
 	//fmt.Println(g)
+	fmt.Println(top5Scc(g))
+}
+
+func top5Scc(g graph) []int {
+	//go NewMonitor(50)
+
 	order := g.RDfsLoop()
 	g.DfsLoop(order)
 	sccs := make(map[int]int)
@@ -29,5 +34,6 @@ func main() {
 	if len(sccList) < 5 {
 		l = len(sccList)
 	}
-	fmt.Println(sccList[:l])
+
+	return sccList[:l]
 }
