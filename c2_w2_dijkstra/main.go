@@ -18,7 +18,7 @@ func printMinPath(g graph, s int) {
 			log.Fatalf("index in array do not match vertex index i: %v, v.i %v\n", i, v.i)
 		}
 
-		//fmt.Printf("Min path from vertex %v to %v is %v\n", s+1, v.i+1, v.pathLen)
+		//fmt.Printf("Root path from vertex %v to %v is %v\n", s+1, v.i+1, v.pathLen)
 	}
 
 	significant := []int{7, 37, 59, 82, 99, 115, 133, 165, 188, 197}

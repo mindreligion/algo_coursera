@@ -35,7 +35,7 @@ func main() {
 	fmt.Println("+6 ", h)
 	min, _ = h.Pop()
 	fmt.Println("pop: ", min, ", ", h)
-	min, _ = h.Min()
+	min, _ = h.Root()
 	fmt.Println("min ", min, ", ", h)
 	h.Put(7)
 	fmt.Println("+7 ", h)

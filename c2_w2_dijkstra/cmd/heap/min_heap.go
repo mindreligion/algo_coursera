@@ -7,7 +7,7 @@ func (h *heap) Put(v int) int {
 	return h.bubbleUp(len(*h) - 1)
 }
 
-func (h *heap) Min() (int, bool) {
+func (h *heap) Root() (int, bool) {
 	s := *h
 	if len(s) == 0 {
 		return 0, false
@@ -16,7 +16,7 @@ func (h *heap) Min() (int, bool) {
 }
 
 func (h *heap) Pop() (int, bool) {
-	min, ok := h.Min()
+	min, ok := h.Root()
 	if !ok {
 		return 0, false
 	}
