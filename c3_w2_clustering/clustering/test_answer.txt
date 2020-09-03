@@ -1,0 +1,1 @@
+4 clustering test min spacing = 3
