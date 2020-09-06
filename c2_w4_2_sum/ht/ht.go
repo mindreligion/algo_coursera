@@ -5,7 +5,7 @@ import (
 	"github.com/mindreligion/algo_coursera/c2_w4_2_sum/prime"
 )
 
-const size = 1e7
+const size = 1e5
 
 type HT struct {
 	size int
@@ -26,7 +26,11 @@ func NewHT() *HT {
 }
 
 func (h *HT) hash(i int) int {
-	return i % len(h.data)
+	hash := i % len(h.data)
+	if hash < 0 {
+		hash += len(h.data)
+	}
+	return hash
 }
 
 func (h *HT) Add(i int) {

@@ -90,7 +90,7 @@ func readGraph(file string) graph {
 		panic(s.Err())
 	}
 	if i != m {
-		fmt.Println("expected", n, "got:", i)
+		fmt.Println("expected", m, "got:", i)
 		panic("edges count not match expected number")
 	}
 

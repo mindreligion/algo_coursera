@@ -12,7 +12,7 @@ import (
 const T = 666
 
 func main() {
-	f, err := os.OpenFile("./2_sum_test.txt", os.O_RDONLY, 0)
+	f, err := os.OpenFile("./2_sum_test1.txt", os.O_RDONLY, 0)
 	if err != nil {
 		panic(err)
 	}
