@@ -5,7 +5,7 @@ type queue struct {
 	last *qnode
 }
 
-func newQueue() *queue{
+func newQueue() *queue {
 	return &queue{}
 }
 
@@ -33,7 +33,7 @@ func (q *queue) consume() *node {
 }
 
 func (q *queue) add(t *node) {
-	qn := qnode {
+	qn := qnode{
 		tree: t,
 	}
 
